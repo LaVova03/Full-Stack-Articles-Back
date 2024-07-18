@@ -60,10 +60,10 @@ app.post('/posts', CheckAuth, postCreateValidation, handleValidationErrors, Post
 app.delete('/posts/:id', CheckAuth, PostController.remove);
 app.put('/posts/:id', CheckAuth, PostController.update);
 
-app.listen(8081, (err) => {
-    if (err) {
-        return console.log(err)
-    } else {
-        console.log('Serveer OK')
-    }
-});
+// app.listen(8081, (err) => {
+//     if (err) {
+//         return console.log(err)
+//     } else {
+//         console.log('Serveer OK')
+//     }
+// });
